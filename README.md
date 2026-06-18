@@ -1,7 +1,7 @@
 # Seoul-Noise-Health-Risk
 Prototype for visualizing traffic noise-attributed health risks across Seoul.
 
-**[Dashboard](https://seoul-noise-health-map.streamlit.app/)**
+**[Go to Dashboard](https://seoul-noise-health-map.streamlit.app/)**
 
 ## Quick Start
 
