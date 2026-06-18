@@ -27,22 +27,3 @@ Place your GeoJSON file at `data/seoul_grid_1km.geojson`. Each feature should ha
 ```
 
 Without real data, the app generates demo data automatically.
-
-## Deploy to Streamlit Cloud
-
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your repo → select `app.py` → Deploy
-
-## Structure
-
-```
-├── app.py              # Main Streamlit dashboard (3 pages)
-├── ebd.py              # EBD computation pipeline (RR → PAF → DALYs → EBD)
-├── demo_data.py        # Demo grid data generator
-├── requirements.txt
-├── .streamlit/
-│   └── config.toml     # Theme & server config
-└── data/
-    └── (your geojson)
-```
