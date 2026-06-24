@@ -423,7 +423,7 @@ EBD<sub>IHD</sub> = PAF × DALYs
 
     st.subheader("Urban Environment Clusters")
     cluster_df = pd.DataFrame([
-        {"Cluster": v['name_ko'], "Description": v["name"],
+        {"Cluster": f"{v['name_ko']}", "Description": v["name"],
          "Dominant Noise": v["noise"]}
         for v in CLUSTER_INFO.items()
     ])
