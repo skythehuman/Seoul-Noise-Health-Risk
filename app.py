@@ -249,7 +249,7 @@ elif page == "Risk Map":
             "Cluster Type",
             options=cluster_options,
             default=cluster_options,
-            format_func=lambda x: CLUSTER_INFO.get(x, {}).get("name_ko", f"Cluster {x}"),
+            format_func=lambda x: CLUSTER_INFO.get(x, {}).get("name", f"Cluster {x}"),
         )
 
     # Apply filters
