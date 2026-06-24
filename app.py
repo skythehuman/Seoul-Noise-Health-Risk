@@ -442,6 +442,7 @@ EBD<sub>IHD</sub> = PAF × DALYs
     st.subheader("References")
     st.markdown("""
 - WHO (2018). [Environmental Noise Guidelines for the European Region](https://www.who.int/europe/publications/i/item/9789289053563)
+- EU Environmental Noise Directive (END). [Directive 2002/49/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002L0049)
 - Tobollik, M. et al. (2019). Burden of disease due to traffic noise in Germany. *International journal of environmental research and public health*, 16(13), 2304.
 - Rockhill, B. et al. (1998). Use and misuse of population attributable fractions. *American journal of public health*, 88(1), 15–19.
 - Im, D., et al. (2023). Updating Korean disability weights for causes of disease: adopting an add-on study method. *Journal of Preventive Medicine and Public Health*, 56(4), 291.
