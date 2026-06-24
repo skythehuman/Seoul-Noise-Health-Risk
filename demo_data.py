@@ -17,11 +17,11 @@ from ebd import calc_rr, calc_paf, classify_risk, DISABILITY_WEIGHT
 
 # Cluster definitions
 CLUSTER_INFO = {
-    1: {"name": "High-rise mixed-use",               "name_ko": "고층 복합용도",      "noise": "Motorcycle traffic"},
-    2: {"name": "Rail & traffic-heavy residential",   "name_ko": "철도·교통 밀집 주거", "noise": "Railway, road traffic"},
-    3: {"name": "Green & low-noise residential",      "name_ko": "녹지·저소음 주거",   "noise": "Low-level mixed"},
-    4: {"name": "High-density with construction",     "name_ko": "고밀도 건설지역",    "noise": "Construction equipment"},
-    5: {"name": "Public urban core",                  "name_ko": "도심 공공지역",      "noise": "Signal (siren), road"},
+    0: {"name": "High-rise mixed-use",               "name_ko": "고층 복합용도",      "noise": "Motorcycle traffic"},
+    1: {"name": "Rail & traffic-heavy residential",   "name_ko": "철도·교통 밀집 주거", "noise": "Railway, road traffic"},
+    2: {"name": "Green & low-noise residential",      "name_ko": "녹지·저소음 주거",   "noise": "Low-level mixed"},
+    3: {"name": "High-density with construction",     "name_ko": "고밀도 건설지역",    "noise": "Construction equipment"},
+    4: {"name": "Public urban core",                  "name_ko": "도심 공공지역",      "noise": "Signal (siren), road"},
 }
 
 
@@ -73,7 +73,7 @@ def generate_demo_grid(seed: int = 42) -> gpd.GeoDataFrame:
             dalys = ylls + ylds
             ebd = paf * dalys
 
-            cluster_id = rng.integers(1, 6)
+            cluster_id = rng.integers(0, 5)
             ci = CLUSTER_INFO[cluster_id]
             risk = classify_risk(elderly, ebd)
 
