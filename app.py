@@ -426,7 +426,7 @@ EBD<sub>IHD</sub> = PAF × DALYs
         {"Cluster": v["name_ko"], 
          "Description": v["name"],
          "Dominant Noise": v["noise"]}
-        for v in CLUSTER_INFO.items()
+        for v in CLUSTER_INFO.values()
     ])
     st.dataframe(cluster_df, use_container_width=True, hide_index=True)
 
